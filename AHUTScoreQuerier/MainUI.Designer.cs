@@ -56,6 +56,7 @@
             this.lblGPA = new System.Windows.Forms.Label();
             this.txtGPA = new System.Windows.Forms.TextBox();
             this.lblCountOfSubjects = new System.Windows.Forms.Label();
+            this.btnQueryRange = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picSchoolLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -289,11 +290,22 @@
             this.lblCountOfSubjects.Size = new System.Drawing.Size(0, 12);
             this.lblCountOfSubjects.TabIndex = 20;
             // 
+            // btnQueryRange
+            // 
+            this.btnQueryRange.Location = new System.Drawing.Point(218, 314);
+            this.btnQueryRange.Name = "btnQueryRange";
+            this.btnQueryRange.Size = new System.Drawing.Size(84, 23);
+            this.btnQueryRange.TabIndex = 21;
+            this.btnQueryRange.Text = "查询多人GPA";
+            this.btnQueryRange.UseVisualStyleBackColor = true;
+            this.btnQueryRange.Click += new System.EventHandler(this.btnQueryRange_Click);
+            // 
             // ScoreQuerierMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 344);
+            this.Controls.Add(this.btnQueryRange);
             this.Controls.Add(this.lblCountOfSubjects);
             this.Controls.Add(this.txtGPA);
             this.Controls.Add(this.lblGPA);
@@ -354,6 +366,7 @@
         private System.Windows.Forms.Label lblGPA;
         private System.Windows.Forms.TextBox txtGPA;
         private System.Windows.Forms.Label lblCountOfSubjects;
+        private System.Windows.Forms.Button btnQueryRange;
     }
 }
 

@@ -178,7 +178,6 @@ namespace RF.ScoreQuerier
         /// <returns>返回获得的请求的网页内容</returns>
         private static void GetFinalInfo(HttpWebRequest request, QueryMode mode)
         {
-
             //获取响应
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             if (response.StatusCode != HttpStatusCode.OK)

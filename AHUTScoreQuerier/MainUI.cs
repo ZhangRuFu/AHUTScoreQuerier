@@ -99,5 +99,11 @@ namespace RF.ScoreQuerier
             txtGPA.Clear();
             lblCountOfSubjects.Text = string.Empty;
         }
+
+        private void btnQueryRange_Click(object sender, EventArgs e)
+        {
+            MultiGPA multiGPAForm = new MultiGPA();
+            multiGPAForm.Show();
+        }
     }
 }
